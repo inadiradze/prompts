@@ -20,8 +20,8 @@ function Nav() {
   }, []);
 
   return (
-    <nav className="flex-between w-full mb-16 pt-3">
-      <Link href="/" className="flex gap-2 flex-center">
+    <nav className="flex-between w-full mb-16 pt-4">
+      <Link href="/" className="flex gap-4 flex-center">
         <Image
           alt="Logo"
           width={30}
@@ -103,7 +103,7 @@ function Nav() {
                     setToggleDropdown(false);
                     signOut();
                   }}
-                  className="mt-5 w-full black_btn"
+                  className="mt-5 w-full outline_btn"
                 >
                   Sign Out
                 </button>

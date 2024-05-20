@@ -100,15 +100,15 @@ div::-webkit-scrollbar-track {
 }
 
 .black_btn {
-  @apply rounded-full border border-gray-400 bg-black py-1.5 px-5 text-white transition-all hover:bg-slate-900 hover:text-white text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full border border-gray-400 bg-gray-950 py-1.5 px-5 text-white transition-all hover:bg-slate-900 hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
 .outline_btn {
-  @apply rounded-full border border-gray-400 bg-transparent py-1.5 px-5 text-white transition-all hover:bg-black hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full border border-gray-400 bg-slate-950 py-1.5 px-5 text-white transition-all hover:bg-black hover:text-gray-400 text-center text-sm font-inter flex items-center justify-center;
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-gray-50 sm:text-6xl;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl;
 }
 
 .desc {
@@ -124,7 +124,7 @@ div::-webkit-scrollbar-track {
 }
 
 .glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+  @apply rounded-xl bg-purple-950/0 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
 }
 
 .prompt_layout {
@@ -138,11 +138,11 @@ div::-webkit-scrollbar-track {
 
 /* Form Component */
 .form_textarea {
-  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+  @apply w-full flex rounded-lg h-[200px] mt-4 p-3 text-sm bg-black/20 text-gray-50 outline-0;
 }
 
 .form_input {
-  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+  @apply w-full flex rounded-lg mt-3 p-3 text-sm bg-black/20 text-gray-50 outline-0;
 }
 
 /* Nav Component */
@@ -151,7 +151,8 @@ div::-webkit-scrollbar-track {
 }
 
 .dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-black min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg
+    bg-black min-w-[210px] flex flex-col gap-2 justify-end items-end;
 }
 
 .dropdown_link {
