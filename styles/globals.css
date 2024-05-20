@@ -26,27 +26,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: white;
+  background-color: #150513;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #191919;
-}
-
-div::-webkit-scrollbar-thumb {
-  background: #ccc;
-}
-
-textarea::-webkit-scrollbar-thumb {
-  background: white;
-}
-textarea::-webkit-scrollbar-track {
-  background: #181818;
-}
-
-div::-webkit-scrollbar-track {
-  background: none;
+  background: #212121;
 }
 
 .main {
@@ -123,7 +108,7 @@ div::-webkit-scrollbar-track {
 }
 
 .search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-gray-400 focus:outline-none focus:ring-0;
+  @apply block w-full rounded-md border border-gray-400 bg-black/40 py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg text-gray-50 font-medium focus:border-gray-200 focus:outline-none focus:ring-0;
 }
 
 .copy_btn {
@@ -168,7 +153,7 @@ div::-webkit-scrollbar-track {
 
 /* PromptCard Component */
 .prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-black/30 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] hover:bg-slate-950 w-full h-fit;
 }
 
 .flex-center {

@@ -10,6 +10,7 @@ const Home = () => {
       <p className="desc text-center">
         Promptia is AI prompting tool for modern world
       </p>
+      <Feed />
     </section>
   );
 };

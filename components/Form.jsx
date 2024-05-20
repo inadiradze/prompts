@@ -21,7 +21,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
             placeholder="Write your prompt here..."
             required
-            className="form_textarea placeholder-gray-300"
+            className="form_textarea placeholder-gray-400"
           />
         </label>
         <label>
@@ -33,7 +33,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
             placeholder="Write your tag..."
             required
-            className="form_input placeholder-gray-300"
+            className="form_input placeholder-gray-400"
           />
         </label>
 
