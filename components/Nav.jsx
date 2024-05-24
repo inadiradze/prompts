@@ -20,8 +20,8 @@ function Nav() {
   }, []);
 
   return (
-    <nav className="flex-between w-full mb-16 pt-4">
-      <Link href="/" className="flex gap-4 flex-center">
+    <nav className="flex-between w-full mb-16 mt-5 pt-4">
+      <Link href="/" className="flex gap-4 flex-center hover:scale-105">
         <Image
           alt="Logo"
           width={30}

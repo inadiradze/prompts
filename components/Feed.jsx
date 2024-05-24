@@ -40,7 +40,7 @@ function Feed() {
           value={searchText}
           onChange={handleSearchChange}
           required
-          className="search_input peer"
+          className="focus:scale-105 search_input peer"
         ></input>
       </form>
       <PromptCardList data={posts} handleTagClick={() => {}} />

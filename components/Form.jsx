@@ -10,10 +10,10 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
       <form
         onSubmit={handleSubmit}
-        className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
+        className="mt-10 w-full flex flex-col gap-7 glassmorphism"
       >
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-50">
+          <span className="font-satoshi font-semibold text-base text-gray-200">
             Your AI Prompt
           </span>
           <textarea
@@ -21,11 +21,11 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
             placeholder="Write your prompt here..."
             required
-            className="form_textarea placeholder-gray-400"
+            className="form_textarea placeholder-gray-500"
           />
         </label>
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-50">
+          <span className="font-satoshi font-semibold text-base text-gray-200">
             Tag
           </span>
           <input
@@ -33,18 +33,18 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
             placeholder="Write your tag..."
             required
-            className="form_input placeholder-gray-400"
+            className="form_input placeholder-gray-500"
           />
         </label>
 
-        <div className="flex-end mx-3 mb-5 gap-4">
-          <Link href="/" className="hover:text-gray-400 text-gray-200 text-sm">
+        <div className="flex-end mx-3 mt-5 mb-5 gap-4">
+          <Link href="/" className="hover:text-gray-400 text-gray-200 text-md">
             Cancel
           </Link>
           <button
             type="submit"
             disabled={submitting}
-            className="px-5 py-1.5 text-sm font-semibold bg-black/30 rounded-full text-gray-50 hover:bg-slate-900"
+            className="px-5 py-1.5 text-md font-semibold bg-black/30 rounded-full text-gray-50 hover:bg-slate-950/50"
           >
             {submitting ? `${type}...` : type}
           </button>
