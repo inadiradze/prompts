@@ -6,6 +6,9 @@ import { usePathname, useRouter } from "next/navigation";
 
 function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
   const [copied, setCopied] = useState("");
+  const { data: session } = useSession();
+  const pathName = usePathname();
+  const router = useRouter();
   const handleCopy = () => {
     setCopied(post.prompt);
     navigator.clipboard.writeText(post.prompt);
@@ -50,6 +53,22 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
       <p className="text-blue-300/80 cursor-pointer hover:text-blue-500/80">
         {post.tag.startsWith("#") ? post.tag : `#${post.tag}`}
       </p>
+      {session?.user.id === post.creator._id && pathName === "/profile" && (
+        <div className="mt-10 flex-end gap-5 border-t p-3 border-gray-500">
+          <p
+            className="font-inter text-sm cursor-pointer text-gray-400 hover:scale-105"
+            onClick={handleEdit}
+          >
+            Edit
+          </p>
+          <p
+            className="font-inter text-sm cursor-pointer hover:scale-105 text-red-500"
+            onClick={handleDelete}
+          >
+            Delete
+          </p>
+        </div>
+      )}
     </div>
   );
 }

@@ -13,7 +13,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         className="mt-10 w-full flex flex-col gap-7 glassmorphism"
       >
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-200">
+          <span className="font-satoshi font-semibold text-base text-gray-300">
             Your AI Prompt
           </span>
           <textarea
@@ -21,11 +21,11 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
             placeholder="Write your prompt here..."
             required
-            className="form_textarea placeholder-gray-500"
+            className="form_textarea placeholder-gray-400/50"
           />
         </label>
         <label>
-          <span className="font-satoshi font-semibold text-base text-gray-200">
+          <span className="font-satoshi font-semibold text-base text-gray-300">
             Tag
           </span>
           <input
@@ -33,7 +33,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
             placeholder="Write your tag..."
             required
-            className="form_input placeholder-gray-500"
+            className="form_input placeholder-gray-400/50"
           />
         </label>
 
