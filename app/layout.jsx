@@ -2,6 +2,7 @@ import "@styles/globals.css";
 
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
+import { MantineProvider } from "@mantine/core";
 
 export const metadata = {
   title: "Promptopia",
@@ -18,7 +19,7 @@ const RootLayout = ({ children }) => (
 
         <main className="app">
           <Nav />
-          {children}
+          <MantineProvider>{children}</MantineProvider>
         </main>
       </Provider>
     </body>

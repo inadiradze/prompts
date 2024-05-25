@@ -49,12 +49,12 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
         </div>
       </div>
 
-      <p className="my-5 font-satoshi text-sm text-gray-200">{post.prompt}</p>
-      <p className="text-blue-300/80 cursor-pointer hover:text-blue-500/80">
+      <p className="my-5 mb-4 font-satoshi text-gray-200">{post.prompt}</p>
+      <p className="text-blue-400 cursor-pointer hover:text-blue-500/80">
         {post.tag.startsWith("#") ? post.tag : `#${post.tag}`}
       </p>
       {session?.user.id === post.creator._id && pathName === "/profile" && (
-        <div className="mt-10 flex-end gap-5 border-t p-3 border-gray-500">
+        <div className="mt-5 flex-end gap-5 border-t p-3 border-gray-500">
           <p
             className="font-inter text-sm cursor-pointer text-gray-400 hover:scale-105"
             onClick={handleEdit}
